@@ -1,0 +1,93 @@
+/* body, html {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    font-family: 'Arial', sans-serif;
+  } */
+  
+  .form-group-login input::placeholder {
+    color: #aaa;
+    font-size: 16px;
+    opacity: 1;
+}
+  .login-container {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group-login {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .form-group-login input {
+    width: 90%;
+    padding: 10px 10px 10px 40px; /* Adjust padding to make room for icons */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    /* margin-left: 8px; */
+  }
+  
+  .form-group-login input:focus {
+    border-color: #aaa;
+    outline: none;
+  }
+  
+  .form-group-login i {
+    position: absolute;
+    left: 14px;
+    top: 38%;
+    transform: translateY(-50%);
+    /* padding-right: 8px; */
+  }
+  
+  .login-button {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(to right, #9d2ee3, #5a00e1);
+  }
+  
+  .forgot-password {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  /* Adjust the size of the icons */
+.form-group-login i img {
+    height: 20px; /* Adjust the height to fit inside the input field */
+    width: auto; /* Keep the aspect ratio */
+  }
+  

@@ -1,0 +1,29 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Công viên Thống Nhất",
+        "description": "Công viên lớn nhất Hà Nội",
+        "image": "https://ik.imagekit.io/tvlk/blog/2023/10/cong-vien-thong-nhat-1.jpg?tr=dpr-2,w-675"
+      },
+      "geometry": {
+        "coordinates": [105.84301277524729, 21.01105471579652],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Công viên Tuổi Trẻ Thủ Đô",
+        "description": "Công viên gì gì",
+        "image": "https://static.kinhtedothi.vn/w960/images/upload/2023/08/30/cong-vien.jpg"
+      },
+      "geometry": {
+        "coordinates": [105.85616298057928, 21.005272554166122],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}

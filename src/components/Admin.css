@@ -1,0 +1,249 @@
+/* CSS for Admin component */
+
+/* Header styles */
+header {
+    background-color: #6455a7;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  /* Logo styles */
+  .logo {
+    margin-right: 80px;;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Hamburger icon styles */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+    align-items: center;
+  }
+  
+  .line {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Open menu styles */
+  .side-menu {
+    position: fixed;
+    top: 72px;
+    left: 0; /* Hide the menu by default */
+    width: 250px;
+    height: 100%;
+    background-color: #6455a7;
+    border-top: 1px solid #fff;
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto;
+  }
+  
+  .side-menu.open {
+    left: -250px; /* Show the menu when open */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin: 0;
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    transition: background-color 0.2s;
+    font-size: large;
+  }
+  
+  li:hover {
+    background-color: #e2dfdf;
+    color: black;
+  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+  min-width: 1000px;
+  overflow-y: auto;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 1760px; */
+    min-width: 1200px;
+    max-height: 100vh;
+    margin-left: 270px;
+    top: 40px;
+}
+
+.crud_header {
+    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0e0e0e;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.crud_body_content{
+    overflow: scroll;
+    margin-top: 5px;
+    max-height: 850px;
+}
+.crud_body_content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .crud_body_content th,
+  .crud_body_content td {
+    border: 2px solid #bcbcbc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .crud_body_content th {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .crud_body_content tr:nth-child(even) {
+    background-color: rgba(209, 208, 208, 0.222);
+  }
+  
+  .crud_body_content tr:hover {
+    background-color: #ddd;
+  }
+  
+  .crud_body_content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .crud_body_content .id {
+    width: 5%;
+  }
+
+  .crud_body_content .title {
+    width: 15%;
+  }
+  
+  .crud_body_content .description {
+    width: 40%;
+  }
+  
+  .crud_body_content .coordinates {
+    width: 10%;
+  }
+  
+  .crud_body_content .image {
+    width: 15%;
+  }
+  .crud_body_content .action {
+    width: 10%;
+  }
+
+  .action-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-button:hover {
+    background-color: #c82727; /* Darker shade for hover */
+  }
+  
+  /* Specific button styles (if needed) */
+  .button-primary {
+    background-color: #008CBA; /* Blue background */
+  }
+  
+  .button-danger {
+    background-color: #f44336; /* Red background */
+  }
+
+  .add-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Common button styling */
+.refresh-button, .logout-button {
+  background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for the refresh button */
+.refresh-button {
+  background-color: #4CAF50; /* Green color */
+  color: white;
+}
+
+.refresh-button:hover {
+  background-color: #45a049; /* Slightly darker green */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+/* Styling for the logout button */
+.logout-button {
+  background-color: #f44336; /* Red color */
+  color: white;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f; /* Slightly darker red */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
